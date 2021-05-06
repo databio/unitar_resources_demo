@@ -1,0 +1,5 @@
+sample_name	type	function	description	local_path
+file1	file	my_read_function	some demo CSV data	files/rand1.txt
+file2	file	my_read_function	some demo CSV data 2	files/rand2.txt
+target1	call	generate_some_data	Generates some random data from a function	NA
+target2	call	generate_some_data	Generates some random data from a function	NA

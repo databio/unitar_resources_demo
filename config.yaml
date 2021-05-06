@@ -1,0 +1,7 @@
+pep_version: "2.0.0"
+sample_table: targets_list.csv
+subsample_table: "targets_params.csv"
+
+data_root: "./"
+target_load_functions:
+  - functions.R
