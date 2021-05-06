@@ -1,6 +1,6 @@
 # Unitar resources demo
 
-Unitar allows you to load targets from external projects. This is useful for sharing targets across projects. One specific use case is if you have some general-purpose data resources that you use frequently in many projects. Using unitar, you can create a single "resources" project, and then use those resources repeatedly. This repository provides a demo for this kind of resources project
+Unitar allows you to load targets from external projects. This is useful for sharing targets across projects. One specific use case is if you have some general-purpose data resources that you use frequently in many projects. Using unitar, you can create a single "resources" project, and then use those resources repeatedly. This repository provides a demo for this kind of resources project.
 
 ## Unitar target factor for csv targets
 
