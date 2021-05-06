@@ -12,7 +12,7 @@ In this project, the list of resource targets are defined in the included [targe
 
 This resource repository can then be used as a normal `targets` project:
 
-```
+```{r}
 library("targets")
 
 tar_make()
@@ -26,7 +26,7 @@ file1
 
 Like any normal targets project, this project can also now be used as an external targets project using `unitar`:
 
-```
+```{r}
 library("unitar")
 options(tar_dirs=c("/home/nsheff/code/unitar_resources_demo"))
 
@@ -34,6 +34,32 @@ unitar_meta()
 unitar_load("file1")
 file1
 
+```
+
+Now, you can use these just as any of the modes defined in the unitar documentation. One common mode would be to use these resources to create derived resources or analysis in your more specialized targets project, and you want to track the resources so you can update things if they change, but you don't want to duplicate the caches into your local folder because they're large. Todo that, you'd do something like:
+
+```{r}
+# _targets.R
+library("unitar")
+options(tar_dirs=c("/home/nsheff/code/unitar_resources_demo"))
+
+
+local_filter_big_reference_data = function(big_data_set_path) {
+  big_data_set = unitar_read_from_path(big_data_set_path)
+  big_data_set[big_data_set > 2]
+}
+
+list(
+  tar_target(
+    big_data_set_path,
+    unitar_path("file1"),
+    format = "file"
+  ),
+  tar_target(
+    filtered_data_set,
+    local_filter_big_reference_data(big_data_set_path)
+  )
+)
 ```
 
 
