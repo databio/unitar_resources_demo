@@ -1,10 +1,10 @@
 # Unitar resources demo
 
-Unitar allows you to load targets from external projects. This is useful for sharing targets across projects. One specific use case is if you have some general-purpose data resources that you use frequently in many projects. Using unitar, you can create a single "resources" project, and then use those resources repeatedly. This repository provides a demo for this kind of resources project
+Unitar allows you to load targets from external projects. This is useful for sharing targets across projects. One specific use case is if you have some general-purpose data resources that you use frequently in many projects. Using unitar, you can create a single "resources" project, and then use those resources repeatedly. This repository provides a demo for this kind of resources project.
 
 ## Unitar target factor for csv targets
 
-In addition to its target sharing functions, `unitar` also provides a target factor that makes it easy to populate a targets project by specifying target parameters in a `csv` file.
+In addition to its target sharing functions, `unitar` also provides a target factory that makes it easy to populate a targets project by specifying target parameters in a `csv` file.
 
 In this project, the list of resource targets are defined in the included [targets_list.csv](targets_list.csv). In [_targets.R](_targets.R), we use `unitar::build_pep_resource_targets` to convert this csv into targets.
 
