@@ -1,0 +1,10 @@
+pep_version: "2.0.0"
+sample_table: sample_table.csv
+
+bioconductor:
+  readFunName: readRemoteData
+  readFunPath: readRemoteData.R
+
+tprojects:
+  - ../target_projects/1refdata1/
+  - ../target_projects/2refdata2/

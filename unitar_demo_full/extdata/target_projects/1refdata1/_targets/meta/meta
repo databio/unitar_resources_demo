@@ -1,0 +1,5 @@
+name|type|data|command|depend|seed|path|time|size|bytes|format|iteration|parent|children|seconds|warnings|error
+big_data_set|stem|2e4ac584de69e650|b17c53f49c001c6f|3119dd32643c09a0|-777343652||t18925.9010255292s|bd15f263caf3a0ec|153591|rds|vector|||1.39|package forcats was built under R version 4.0.5|
+filtered_data|stem|b63586743a8942cb|0eb59b12f58cfae2|87d4439dfaebd222|-1055015506||t18925.9010257766s|e9cfc88c9b9e20ed|75883|rds|vector|||0||
+build_big_reference_data|function|222a070500bcced2||||||||||||||
+filter_big_reference_data|function|641924966f44b691||||||||||||||
